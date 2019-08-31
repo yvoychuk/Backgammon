@@ -10,12 +10,12 @@ This repository contains all code related to this application, handling both bac
 
 ### Tech stack.
 
-### Backend
+#### Backend
 - database: postrges
 - backend lang: javascript
 - web-server: express
 
-### Frontend(~)
+#### Frontend(~)
 - framework/library: vuejs
 - static typing: typescript
 - testing: jest + mocha
@@ -39,7 +39,7 @@ This repository contains all code related to this application, handling both bac
 #### Database architecture.
 ##### User model.
 Standard user model with specific extra fields, like level, stats, etc.
-{
+`{
   id: string,
   name: string,
   email: string,
@@ -51,18 +51,18 @@ Standard user model with specific extra fields, like level, stats, etc.
   },
   isPlaying: boolean,
   isActive: boolean,
-}
+}`
 
 ##### Game model.
 Store information about game session.
-{
+`{
   id: string,
   name: string,
   players: list[string],
   isActive: boolean,
   winner: string,
   stats: StatsModel,
-}
+}`
 
 ##### Stats model.
 This should store different specific fields, like number of tuples, speed of players, etc.
