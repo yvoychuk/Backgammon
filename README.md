@@ -39,29 +39,29 @@ This repository contains all code related to this application, handling both bac
 #### Database architecture.
 ##### User model.
 Standard user model with specific extra fields, like level, stats, etc.
-`{
-  id: string,
-  name: string,
-  email: string,
-  password: string, // is it secure?
-  level: string,
-  stats: {
-    wins: number,
-    losses: number,
-  },
-  isPlaying: boolean,
-  isActive: boolean,
+`{  
+  id: string,  
+  name: string,  
+  email: string,  
+  password: string, // is it secure?  
+  level: string,  
+  stats: {  
+    wins: number,  
+    losses: number,  
+  },  
+  isPlaying: boolean,  
+  isActive: boolean,  
 }`
 
 ##### Game model.
 Store information about game session.
-`{
-  id: string,
-  name: string,
-  players: list[string],
-  isActive: boolean,
-  winner: string,
-  stats: StatsModel,
+`{  
+  id: string,  
+  name: string,  
+  players: list[string],  
+  isActive: boolean,  
+  winner: string,  
+  stats: StatsModel,  
 }`
 
 ##### Stats model.
