@@ -86,13 +86,8 @@ Approximate structure will look like this:
 FE & BE parts will have different version rythm, but inside of them everything should have same version. For compatibility reasons, both FE & BE should know whether its version is compatible with each other.
 
 ### Work plan.
-1. DB structure default.
-2. Basic webserver & connection to DB.
-3. Basic FE setup.
-4. Basic FE app.
-5. FE app connection with webserver.
-6. Game session implementation.
-7. Stats & history.
+1. Prototype of browser-only single-machine game.
+2. TODO.
 
 ### Release dates.
 Alpha version must be released before December 1st, 2019.
